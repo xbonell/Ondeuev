@@ -1,1 +1,3 @@
-Hello world!
+This is the code base for the Ondeuev website (www.ondeuev.net)
+
+It uses Nanoc, SASS and HAML.
