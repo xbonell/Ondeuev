@@ -1,0 +1,12 @@
+    <div id="aside">
+		<%
+		  homepage_path = '/' + language_code_of(item) + '/' 
+		  home_page = @items.find { |i| i.reps[0].path == homepage_path }
+		%>		
+		<ul class="nav">
+		    <li><%= link_to_unless_current(home_page[:title], home_page.reps[0]) %></li>
+		    <% home_page.children.sort_by { |p| p[:menu_priority] }.each do |page| %>
+		        <li><%= link_to_unless_current(page[:title], page.reps[0]) %></li>
+		    <% end %>
+		</ul>				
+    </div><!-- #aside -->

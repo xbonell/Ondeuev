@@ -1,0 +1,43 @@
+  </div><!-- #body -->
+  <div id="footer">
+	<p>Ondeuev v4.0  - Copyright © 2000-<%= DateTime.now.year %> Ondeuev Comunicació S.L.</p>
+  </div><!-- #footer -->
+</div><!-- #page -->
+  <script src="/js/jquery-1.5.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery-ui-1.8.12.custom.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.lightbox-0.5.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/swfobject.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/scripts.js" type="text/javascript" charset="utf-8"></script>
+  <% if @item[:canonical_identifier] == "metodologia" %>
+  <script type="text/javascript" charset="utf-8">
+  	var flashvars = {};
+	var params = {
+		wmode: "transparent",
+		bgcolor: "#222222"	
+	};
+	var attributes = {
+		id: "metode"
+	};
+	swfobject.embedSWF("/swf/metode-<%= language_code_of(@item) %>.swf", "metode_ani", "300", "400", "9.0.0", "/swf/expressInstall.swf", flashvars, params, attributes);	
+  </script>
+  <% end %>
+  <script type="text/javascript">
+  $(function() {
+      $('ul.gallery a').lightBox({
+  <% if language_code_of(@item) == "ca" %>	
+			txtImage: 'Imatge',
+			txtOf: 'de',
+  <% elsif language_code_of(@item) == "es" %> 			
+			txtImage: 'Imagen',
+			txtOf: 'de',
+  <% end %>			
+			imageLoading: '/img/lightbox-ico-loading.gif',
+			imageBtnClose: '/img/lightbox-btn-close.gif',
+			imageBtnPrev: '/img/lightbox-btn-prev.gif',
+			imageBtnNext: '/img/lightbox-btn-next.gif',
+			imageBlank: '/img/lightbox-blank.gif'	
+		});
+  });
+  </script>
+  </body>
+</html>

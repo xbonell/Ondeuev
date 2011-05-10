@@ -1,0 +1,22 @@
+.DS_Store
+._*
+output/*
+.sass-cache/*
+content/._sitemap.html
+content/ca/._branding.html
+content/ca/._clients.html
+content/ca/._consulting.html
+content/ca/._contacte.html
+content/ca/._equip.html
+content/ca/._graphpack.html
+content/ca/._index.html
+content/ca/._media.html
+content/ca/._metodologia.html
+content/ca/._ondeuev.html
+content/ca/._publicitat.html
+content/css/.sass-cache/1d2492abaebee09518e851e55ae305bd6532bebd/_define.sassc
+content/css/.sass-cache/1d2492abaebee09518e851e55ae305bd6532bebd/_mixins.sassc
+content/css/.sass-cache/1d2492abaebee09518e851e55ae305bd6532bebd/reset.sassc
+content/css/.sass-cache/1d2492abaebee09518e851e55ae305bd6532bebd/styles.sassc
+tmp/dependencies
+tmp/dependencies (Xavier Bonell Iturbe's conflicted copy 2011-05-04)
