@@ -27,14 +27,17 @@
   <% if language_code_of(@item) == "ca" %>	
 			txtImage: 'Imatge',
 			txtOf: 'de',
-  <% elsif language_code_of(@item) == "es" %> 			
+			imageBtnClose: '/img/lightbox-btn-close-ca.gif',
+			imageBtnPrev: '/img/lightbox-btn-prev-ca.gif',
+			imageBtnNext: '/img/lightbox-btn-next-ca.gif',			
+  <% elsif language_code_of(@item) == "es" %>
+			imageBtnClose: '/img/lightbox-btn-close-es.gif',
+			imageBtnPrev: '/img/lightbox-btn-prev-es.gif',
+			imageBtnNext: '/img/lightbox-btn-next-es.gif', 			
 			txtImage: 'Imagen',
 			txtOf: 'de',
   <% end %>			
 			imageLoading: '/img/lightbox-ico-loading.gif',
-			imageBtnClose: '/img/lightbox-btn-close.gif',
-			imageBtnPrev: '/img/lightbox-btn-prev.gif',
-			imageBtnNext: '/img/lightbox-btn-next.gif',
 			imageBlank: '/img/lightbox-blank.gif'	
 		});
   });
